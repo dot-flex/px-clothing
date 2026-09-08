@@ -39,9 +39,5 @@ Requires an existing freemode character with a saved appearance. Keep your chara
 ## 📷 Showcase
 
 ![PX Clothing showcase 1](https://i.ibb.co/Wvz9PwCJ/image.png)
-
-![PX Clothing showcase 2](https://i.ibb.co/rGtsyGMN/image.png)
-
+![PX Clothing showcase 2](https://i.ibb.co/9mRBDVvp/image.png)
 ![PX Clothing showcase 3](https://i.ibb.co/JjFS5g34/image.png)
-
-![PX Clothing showcase 4](https://i.ibb.co/9mRBDVvp/image.png)
