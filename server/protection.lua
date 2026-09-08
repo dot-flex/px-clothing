@@ -80,7 +80,7 @@ local function verify()
             return false, 'Unsupported integrity catalog entry.'
         end
     end
-    for _, file in ipairs({ 'fxmanifest.lua', 'server/protection.lua', 'server/version.lua', 'server/main.lua', 'client/main.lua', 'web/app.js', 'web/index.html', 'data/tattoos.json' }) do
+    for _, file in ipairs({ 'fxmanifest.lua', 'server/protection.lua', 'server/main.lua', 'client/main.lua', 'web/app.js', 'web/index.html', 'data/tattoos.json' }) do
         if not seen[file] then return false, 'Incomplete integrity catalog. Reinstall the complete release.' end
     end
     if type(Config) ~= 'table' or type(Appearance) ~= 'table' or type(ClothingLocale) ~= 'table' or type(ClothingFramework) ~= 'table' or type(ClothingIllenium) ~= 'table' or type(ClothingTattoos) ~= 'table' then
