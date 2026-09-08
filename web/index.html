@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://*; object-src 'none'">
+  <title>Clothing &amp; Appearance</title>
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" hidden aria-label="Character customization">
+    <div id="camera-surface" aria-label="Drag to rotate character, right drag to move camera, scroll to zoom"></div>
+    <header class="topbar">
+      <nav id="tabs" aria-label="Appearance categories"></nav>
+      <div class="balances"><button id="cash" class="balance cash" title="Pay with cash"></button><button id="bank" class="balance bank" title="Pay with bank"></button></div>
+    </header>
+    <section class="heading"><button id="back" class="back" aria-label="Go back"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button><h1 id="title">APPAREL</h1><span id="breadcrumb"></span></section>
+    <section id="home" class="home" aria-label="Apparel categories"></section>
+    <section id="browser" class="browser" hidden>
+      <nav id="groups" class="rail" aria-label="Clothing groups"></nav>
+      <nav id="categories" class="rail subrail" aria-label="Clothing categories"></nav>
+      <div class="catalog">
+        <div class="searchbar"><span id="search-icon"></span><input id="search" type="search" placeholder="Search…" aria-label="Search clothing by name or number" autocomplete="off"><button id="filter" title="Show selected item" aria-label="Show selected item"></button><button id="reset-filter" title="Reset search" aria-label="Reset search"></button></div>
+        <div id="items" class="item-grid scroll" role="listbox" aria-label="Clothing styles" tabindex="0"></div>
+        <div id="catalog-status" class="catalog-status" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="customization" class="customization" hidden>
+      <h2>CUSTOMIZATION</h2><div id="custom-tabs" class="custom-tabs"></div>
+      <button id="textures-toggle" class="section-bar" aria-expanded="true">TEXTURES <span><i class="fa-solid fa-caret-up" aria-hidden="true"></i></span></button>
+      <div id="textures" class="texture-grid scroll" role="listbox" aria-label="Textures"></div>
+      <div id="fit-controls" class="fit-controls"></div>
+    </section>
+    <section id="adjustments" class="adjustments scroll" hidden aria-label="Appearance adjustments"></section>
+    <section id="wardrobe" class="wardrobe" hidden><div class="section-bar">SAVED OUTFITS</div><div id="outfits" class="scroll"></div><p class="hint">Save a new outfit at checkout.</p></section>
+    <section id="tattoo-panel" hidden>
+      <div class="browser tattoo-browser">
+        <nav id="tattoo-categories" class="rail scroll" aria-label="Tattoo body areas"></nav>
+        <div class="catalog">
+          <div class="searchbar"><span><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span><input id="tattoo-search" type="search" placeholder="Search tattoos…" aria-label="Search tattoos" autocomplete="off"><button id="tattoo-filter" title="Show selected tattoos" aria-label="Show selected tattoos"><i class="fa-solid fa-filter" aria-hidden="true"></i></button><button id="tattoo-reset" title="Reset search" aria-label="Reset tattoo search"><i class="fa-solid fa-arrow-rotate-left" aria-hidden="true"></i></button></div>
+          <div id="tattoos" class="item-grid scroll" role="listbox" aria-label="Tattoo catalog" tabindex="0"></div>
+          <div id="tattoo-status" class="catalog-status" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="customization tattoo-customization">
+        <h2>CUSTOMIZATION</h2>
+        <div class="section-bar">TATTOO PREVIEW</div>
+        <div id="tattoo-detail"></div>
+        <button id="tattoo-clothing" class="secondary" aria-pressed="true"><i class="fa-solid fa-eye" aria-hidden="true"></i><span>SHOW CLOTHING</span></button>
+      </div>
+    </section>
+    <section class="checkout" aria-label="Purchase">
+      <div class="total"><span>TOTAL COST</span><strong><span id="total">$0</span><small> + TAX</small></strong></div>
+      <button id="confirm" class="confirm"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>CONFIRM</button>
+    </section>
+    <footer class="controls">
+      <div><button data-camera="pan"><i class="fa-solid fa-up-down-left-right" aria-hidden="true"></i>MOVE CAMERA</button><span class="separator">/</span><button data-camera="rotate"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>ROTATE</button><span class="separator">/</span><button data-camera="zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>ZOOM</button><span class="separator">/</span><button data-camera="focus"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i>FOCUS</button></div>
+      <div><span><kbd><i class="fa-solid fa-compass" aria-hidden="true"></i></kbd> MOVE</span><span class="separator">/</span><span><kbd><i class="fa-solid fa-arrow-turn-down" aria-hidden="true"></i></kbd> SELECT</span><span class="separator">/</span><button id="exit-hint"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i><kbd>ESC</kbd> <span id="exit-label">EXIT</span></button><span class="separator">/</span><button id="checkout-hint"><i class="fa-solid fa-receipt" aria-hidden="true"></i><kbd>TAB</kbd> CHECKOUT</button></div>
+    </footer>
+    <div id="modal-backdrop" class="modal-backdrop" hidden>
+      <section id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h2 id="modal-title">CHECKOUT</h2><button id="modal-close" aria-label="Close dialog"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><div id="modal-content"></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
