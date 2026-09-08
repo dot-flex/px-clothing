@@ -1,0 +1,190 @@
+{
+    "schema":  1,
+    "files":  [
+                  {
+                      "path":  "client/bridge.lua",
+                      "mode":  "text",
+                      "sha256":  "f4856799cf799d8949e82aa4e0609c3843595dba8c7d3119fc5bbacbf9a99143"
+                  },
+                  {
+                      "path":  "client/main.lua",
+                      "mode":  "text",
+                      "sha256":  "6abc243f6cde2085f1994100fca333ae99407c3d34e8d96dc0e63d1da0c5d102"
+                  },
+                  {
+                      "path":  "client/notifications.lua",
+                      "mode":  "text",
+                      "sha256":  "da0d30cec720f25ac634fd5bdba24258ea1b514b3703929240a4cb7cbcf49161"
+                  },
+                  {
+                      "path":  "client/runtime.lua",
+                      "mode":  "text",
+                      "sha256":  "05cbea8c678d98facaf28b73bb5d54aa54f2d1655f03b165e6ebc04dc3f8bd19"
+                  },
+                  {
+                      "path":  "client/target.lua",
+                      "mode":  "text",
+                      "sha256":  "5882ed242102837f93df5b5acbebde543e25d549303e3ab85d5f5443f8928aa8"
+                  },
+                  {
+                      "path":  "data/tattoos.json",
+                      "mode":  "text",
+                      "sha256":  "4a001b452741e89b535c390323be8e69a2e1a7a7d47e9abfb56fb8750b172707"
+                  },
+                  {
+                      "path":  "fxmanifest.lua",
+                      "mode":  "text",
+                      "sha256":  "8f537171983a070af1667fd8d918f7b46c743ead296da7dca4f7d909480df86f"
+                  },
+                  {
+                      "path":  "locales/de.lua",
+                      "mode":  "text",
+                      "sha256":  "1fd87c2c6607c65e1b08849cfaea72fbdc31285a298c1d4e157633c9d33bf020"
+                  },
+                  {
+                      "path":  "locales/en.lua",
+                      "mode":  "text",
+                      "sha256":  "05c0ef24b60e88d7ecf36d353304b4bd96f40d0c14c96c0bb526544b058a1e25"
+                  },
+                  {
+                      "path":  "locales/es.lua",
+                      "mode":  "text",
+                      "sha256":  "e95dc8739e481b74d6eea894df7a9b416db028e9c21c335a97f69791ea65d952"
+                  },
+                  {
+                      "path":  "locales/fr.lua",
+                      "mode":  "text",
+                      "sha256":  "75872e8637751261abac44e49a2ccfddfcf960e05d7cc1e2452a6e8ecb95403f"
+                  },
+                  {
+                      "path":  "locales/sr.lua",
+                      "mode":  "text",
+                      "sha256":  "3577d07da36ebd77c3671173cc9fc4bf31b0c02e520b53b41402dd8c524e1966"
+                  },
+                  {
+                      "path":  "scripts/thumbnails.mjs",
+                      "mode":  "text",
+                      "sha256":  "9a572b59979404f24002061a95d22cf868f899422e2b8f8dc889b7214f52c2e8"
+                  },
+                  {
+                      "path":  "scripts/update-integrity.ps1",
+                      "mode":  "text",
+                      "sha256":  "1e0a66b277a573add92067a5f86a03cff2459876d1fbc7937b490c917ffb7467"
+                  },
+                  {
+                      "path":  "server/bridge.lua",
+                      "mode":  "text",
+                      "sha256":  "d5d2a63fca54159be86dbefcca30258b1519225bc0e26efb5194215f33eab531"
+                  },
+                  {
+                      "path":  "server/main.lua",
+                      "mode":  "text",
+                      "sha256":  "f4f2d099deb277c82445d35b37d00b09ccc6e96d6e50e5c4dfedb3867972884d"
+                  },
+                  {
+                      "path":  "server/protection.lua",
+                      "mode":  "text",
+                      "sha256":  "09e991316c5b0eb5f323aed803605fb99b9a159c8c63ca1f6096437073faa9bf"
+                  },
+                  {
+                      "path":  "server/version.lua",
+                      "mode":  "text",
+                      "sha256":  "e37d7952686d63992cdc7f72eb4826758e8e89257b96fcf0dbd308197c909c60"
+                  },
+                  {
+                      "path":  "shared/appearance.lua",
+                      "mode":  "text",
+                      "sha256":  "975eac14ed25537c54b624edaed18e681cf688204b4f2ae5c873120e85f9cc60"
+                  },
+                  {
+                      "path":  "shared/framework.lua",
+                      "mode":  "text",
+                      "sha256":  "d228285e5f7213a6498b8ec9eefe9d9e07486c044749a205fb0f15c646dff986"
+                  },
+                  {
+                      "path":  "shared/illenium.lua",
+                      "mode":  "text",
+                      "sha256":  "21fe08b8c3f2cf132ff99ae65f7b403b9d70ef03c21eceff4e56dc9ed8e5e187"
+                  },
+                  {
+                      "path":  "shared/locale.lua",
+                      "mode":  "text",
+                      "sha256":  "55581d984379f8b6ae15f10e04ff5c7a8ed1a9f71e8ba5acdd16b7f606599079"
+                  },
+                  {
+                      "path":  "shared/tattoos.lua",
+                      "mode":  "text",
+                      "sha256":  "9fbefb8e964c9683dca2a35dfdde2ba5202a85f66a70a8a211394ddb87156cbf"
+                  },
+                  {
+                      "path":  "web/app.js",
+                      "mode":  "text",
+                      "sha256":  "a465583a2bc1149818efee8da877c23ef9c989f13e3bb94478d176860e096a0b"
+                  },
+                  {
+                      "path":  "web/assets/fontawesome/css/fontawesome.min.css",
+                      "mode":  "text",
+                      "sha256":  "a45b7787a411e8ae73e39d4ab3e53dedbef1439e66717c5a364c7fe6a0e10b53"
+                  },
+                  {
+                      "path":  "web/assets/fontawesome/css/solid.min.css",
+                      "mode":  "text",
+                      "sha256":  "cf8dbb05f9b096d4896f1e036a9153e57de988cf3cc47e1e45e9670eab8d1a82"
+                  },
+                  {
+                      "path":  "web/assets/fontawesome/webfonts/fa-solid-900.woff2",
+                      "mode":  "binary",
+                      "sha256":  "6a3b4536c389c82a2a2e160e7ab15f6c8acef77f42e04d4c697f1cbfa9e90026"
+                  },
+                  {
+                      "path":  "web/assets/fonts/BarlowCondensed-BoldItalic.ttf",
+                      "mode":  "binary",
+                      "sha256":  "d8694f65cd70c3e5e600ead37657aab0adb5f63b275d0c1f6f4a7046de222145"
+                  },
+                  {
+                      "path":  "web/assets/fonts/BarlowCondensed-SemiBold.ttf",
+                      "mode":  "binary",
+                      "sha256":  "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+                  },
+                  {
+                      "path":  "web/assets/thumbnails/index.json",
+                      "mode":  "text",
+                      "sha256":  "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+                  },
+                  {
+                      "path":  "web/icons.js",
+                      "mode":  "text",
+                      "sha256":  "77b6e70fc59ad07ba0c45e2358b564a299d602fffe29add64bd0ef0bc9d74b76"
+                  },
+                  {
+                      "path":  "web/index.html",
+                      "mode":  "text",
+                      "sha256":  "049911fda702b6cc5a28379dec804648e8f0f6680b9c70ac9ac5b158421e801b"
+                  },
+                  {
+                      "path":  "web/locale.js",
+                      "mode":  "text",
+                      "sha256":  "69731830cea1af2b0364d2e81fefb9ea977dce96facf9582d625d1d62cbf8976"
+                  },
+                  {
+                      "path":  "web/model.js",
+                      "mode":  "text",
+                      "sha256":  "a6ad100ebcef2e81229fd8821543bcb70f2682f0165e4c5788d6262d322a419c"
+                  },
+                  {
+                      "path":  "web/style.css",
+                      "mode":  "text",
+                      "sha256":  "ce67d44e876f3d29d26e7567e6cb3cc1f633168e3ae02b3cce82674407e2d4ca"
+                  },
+                  {
+                      "path":  "web/tattoos.js",
+                      "mode":  "text",
+                      "sha256":  "834ccc4808903d60c0f87830f7cf4303ca8019e992461e8f7f5e78c7bcfdda08"
+                  },
+                  {
+                      "path":  "web/thumbnails.js",
+                      "mode":  "text",
+                      "sha256":  "b946c2f70c0e4f30c1e329a6131411c3c300c54d643536e5256e596eaa6fb8ea"
+                  }
+              ]
+}
