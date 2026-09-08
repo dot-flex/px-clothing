@@ -1,13 +1,17 @@
 if not ClothingProtection or not ClothingProtection.ready then return end
 
 local settings = Config.VersionCheck
-if type(settings) ~= 'table' or settings.enabled == false then return end
 local resource = GetCurrentResourceName()
-local repository = settings.repository
 
 local function notice(message)
     print(('^3[px-clothing] %s^7'):format(message))
 end
+
+if type(settings) ~= 'table' or settings.enabled == false then
+    notice(('Version checker disabled | Installed: %s'):format(tostring(GetResourceMetadata(resource, 'version', 0))))
+    return
+end
+local repository = settings.repository
 
 if type(repository) ~= 'string' or #repository > 140 or not repository:match('^[%w][%w%-]*/[%w_.%-]+$') or repository:find('..', 1, true) then
     notice('Version checker disabled: set Config.VersionCheck.repository to a GitHub owner/repository.')
@@ -79,6 +83,7 @@ if hours ~= hours or hours < 0 or hours > 168 then hours = 24 end
 local interval = hours == 0 and 0 or math.max(1, hours) * 3600000
 local seconds = tonumber(settings.timeoutSeconds) or 10
 if seconds ~= seconds or seconds < 3 or seconds > 30 then seconds = 10 end
+notice(('Version checker enabled | Installed: %s | Repository: %s'):format(installed, repository))
 local lastNotice, stopped = nil, false
 AddEventHandler('onResourceStop', function(name) if name == resource then stopped = true end end)
 
@@ -109,8 +114,10 @@ check = function()
         end
         if newer(remote, current) then
             report('update:' .. release.tag_name, ('Update available: %s -> %s | https://github.com/%s/releases/latest'):format(installed, release.tag_name, repository))
+        elseif newer(current, remote) then
+            report('ahead:' .. release.tag_name, ('Version check complete | Installed: %s | Latest: %s | Installed version is newer than the latest release.'):format(installed, release.tag_name))
         else
-            lastNotice = nil
+            report('current:' .. release.tag_name, ('Up to date | Installed: %s | Latest: %s'):format(installed, release.tag_name))
         end
     end
     SetTimeout(seconds * 1000, function() finish(0) end)
