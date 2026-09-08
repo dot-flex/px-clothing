@@ -1,7 +1,12 @@
 # PX Clothing
+
 **Clothing, Tattoos & Character Appearance for FiveM**
 
-## Features
+![FiveM](https://img.shields.io/badge/FiveM-PX_Clothing-00bcd4?style=flat-square)
+![Frameworks](https://img.shields.io/badge/frameworks-ESX_%7C_QBCore_%7C_QBox-44cc11?style=flat-square)
+![Languages](https://img.shields.io/badge/languages-5-007ec6?style=flat-square)
+
+## ✨ Features
 
 - **Visual clothing menu** — Browse clothing and accessories by category, search the catalog and select styles and textures with item thumbnails and live character previews.
 - **Outfit management** — Save your favorite combinations, load saved outfits and remove the ones you no longer need.
@@ -14,7 +19,7 @@
 
 Includes **14 clothing stores, 6 tattoo studios and 1 hospital appearance clinic**, with locations configurable to suit your server.
 
-## Dependencies
+## 📦 Dependencies
 
 - **ox_lib**
 - **ox_target**
@@ -30,8 +35,13 @@ Includes **14 clothing stores, 6 tattoo studios and 1 hospital appearance clinic
 
 Requires an existing freemode character with a saved appearance. Keep your character creation and login appearance system enabled.
 
-## Showcase
+
+## 📷 Showcase
 
 ![PX Clothing showcase 1](https://i.ibb.co/Wvz9PwCJ/image.png)
-![PX Clothing showcase 2](https://i.ibb.co/9mRBDVvp/image.png)
+
+![PX Clothing showcase 2](https://i.ibb.co/rGtsyGMN/image.png)
+
 ![PX Clothing showcase 3](https://i.ibb.co/JjFS5g34/image.png)
+
+![PX Clothing showcase 4](https://i.ibb.co/9mRBDVvp/image.png)
