@@ -8,7 +8,7 @@ $sha = [System.Security.Cryptography.SHA256]::Create()
 try {
     foreach ($file in (Get-ChildItem -LiteralPath $resourceRoot -File -Recurse | Sort-Object FullName)) {
         $relative = $file.FullName.Substring($resourceRoot.Length + 1).Replace('\', '/')
-        if ($relative -eq 'config.lua' -or $relative -eq 'data/integrity.json') { continue }
+        if ($relative -eq 'config.lua' -or $relative -eq 'server/version.lua' -or $relative -eq 'data/integrity.json') { continue }
         if ($relative -ne 'fxmanifest.lua' -and $relative -notmatch '^(client|server|shared|locales|scripts|web|data)/') { continue }
         $extension = $file.Extension.ToLowerInvariant()
         if ($imageExtensions -contains $extension) {
