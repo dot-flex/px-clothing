@@ -5,7 +5,6 @@
 ![FiveM](https://img.shields.io/badge/FiveM-PX_Clothing-00bcd4?style=flat-square)
 ![Frameworks](https://img.shields.io/badge/frameworks-ESX_%7C_QBCore_%7C_QBox-44cc11?style=flat-square)
 ![Languages](https://img.shields.io/badge/languages-5-007ec6?style=flat-square)
-[![Downloads](https://img.shields.io/github/downloads/dot-flex/px-clothing/total?style=flat-square&logo=github&color=44cc11)](https://github.com/dot-flex/px-clothing/releases)
 [![Visitors](https://hits.sh/github.com/dot-flex/px-clothing.svg?style=flat-square&label=visitors&color=007ec6)](https://hits.sh/github.com/dot-flex/px-clothing/)
 
 ## ✨ Features
